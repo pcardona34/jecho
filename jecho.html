@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+	
+<!--
+ * JEcho : jecho.html
+ *
+ * ( c ) 2019 Patrick Cardona
+ * JEcho : exerciseur de réécriture conçu au moyen de JDicto.
+ *
+ */
+ -->
+	
+	<head>
+		<meta charset="utf-8">
+		<title>Exercice de réécriture</title>
+		
+		<!-- CSS partagée : dictée -->
+		<link href="css/chargement.css" type="text/css" rel="stylesheet" />
+		<link href="lib/css/carspec.css" type="text/css" rel="stylesheet" />
+		<link href="css/jecho.css" rel="stylesheet" type="text/css" />
+		<link href="css/boutons.css" rel="stylesheet" type="text/css" />
+		
+		
+	</head>
+	
+	<body>
+	
+	<!-- Si Javascript n'est pas autorisé ou supporté... -->
+	<noscript>
+		<h1>Erreur !</h1>
+		<p>Votre navigateur ne prend pas en charge l'exécution de scripts. 
+			Veuillez autoriser l'exécution de JavaScript ou employer un navigateur adapté.</p>
+	</noscript>
+	
+	<!-- Corps de l'appli -->	
+
+<div id="conteneur"><p class="chargement">Veuillez patienter... L'exercice de réécriture se prépare...</p></div>
+
+<!-- Modèle -->
+<template id="modele">
+		<header>
+		<div>
+			<h1 id="titre_principal"></h1>
+				<span id="ouvrage"></span> de <span id="auteur"></span> | <span id="prof"></span>
+			</p>
+		</div>
+	</header>
+	
+	<section>
+		<div id="section_1">
+			<h2>Consigne</h2>
+			
+			<div id="consigne"></div>
+			
+		</div>
+		<div id="section_1_bis">
+			<!-- Formulaire de saisie du texte -->
+			<h2>Écrire le texte transformé</h2>
+			<div>
+			<table id="table_spec">
+				<caption>
+					Caractères spéciaux	
+				</caption>
+					<tr>
+					<td class="spec">«</td>
+					<td class="spec">—</td>
+					<td class="spec">»</td>
+					<td class="spec">&hellip;</td>
+					<td class="spec">œ</td>
+					<td class="spec">Œ</td>
+					<td class="spec">É</td>
+					<td class="spec">À</td>
+					<td><a href="#" class="aide">?</a></td>
+					</tr>	
+			</table>
+			</div>		
+			
+			<form name="formulaire">
+				
+				<fieldset  id="ecrire">
+					<textarea id="dictee" name="dictee" cols="80" rows="7"></textarea>
+				</fieldset>
+				<br />
+				<input type="submit" value="Corriger le texte saisi" /> 
+				&nbsp;&nbsp;
+				<input type="submit" value="Afficher la solution" />
+			</form>
+		</div>
+	</section>
+	
+<!-- Annexes -->
+	<section>
+		<div id="section_2">
+			<h2>Correction</h2>
+			<div id="correction">Ici, texte corrigé</div>
+		</div>
+		
+		<div id="section_3">
+			<h2>Solution</h2>
+			<div id="solution">Ici, solution</div>
+		</div>
+		
+		<div id="section_4">
+			<form>
+				<input type="submit" value="Reprendre" class="reprendre" />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="submit" value="Recommencer" class="recommencer" />
+			</form>
+		</div>
+	</section>
+	
+	<!-- Pied de page -->	
+	<footer>
+		Exercice de réécriture réalisé au moyen de <a title="apropos" href="#">JEcho</a> - © 2012-2019 Patrick Cardona.
+		&nbsp;| <a href="#" title="Licence" rel="jslicense">Licence</a>
+	</footer>
+    
+</template>
+		
+	<!-- Optimisation : le code des lib javascript est chargé en fin de fichier -->
+	<!-- Lib JavaScript génériques ou partagées : dictée + générateur -->
+		<script src="js/navigateur.js"></script>
+		<!-- Lib liées à cette page -->
+		<script src="js/insertion.js"></script>		
+		<script src="js/jsdiff.js"></script>
+		
+		<!-- Scripts partagés -->
+		<script src="lib/js/apropos.js"></script>
+		<script src="lib/js/lic.js"></script>
+		
+		<!-- Scripts liés à cette page -->
+		<script src="js/jecho.js"></script>
+		<script src="js/interface.js"></script>
+	</body>
+</html>

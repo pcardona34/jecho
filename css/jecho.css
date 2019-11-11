@@ -1,0 +1,165 @@
+/*
+ * chargement.css
+ *  
+ * ( c ) 2019 Patrick Cardona
+ * JEcho : exercice de réécriture de JDicto
+ */
+
+/* =================================================================== */
+/* LICENCE
+/* =================================================================== */
+/*
+@licstart  The following is the entire license notice for the 
+    CSS code in this page.
+
+Copyright (C) 2019 Patrick CARDONA - JEcho, exercice de Réécriture
+
+    The CSS code in this page is free software: you can
+    redistribute it and/or modify it under the terms of the GNU
+    General Public License (GNU GPL) as published by the Free Software
+    Foundation, either version 3 of the License, or (at your option)
+    any later version.  The code is distributed WITHOUT ANY WARRANTY;
+    without even the implied warranty of MERCHANTABILITY or FITNESS
+    FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+    As additional permission under GNU GPL version 3 section 7, you
+    may distribute non-source (e.g., minimized or compacted) forms of
+    that code without the copy of the GNU GPL normally required by
+    section 4, provided you include this license notice and a URL
+    through which recipients can access the Corresponding Source.
+    
+@licend  The above is the entire license notice
+    for the CSS code in this page.    
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+body {
+	padding:0.5em;
+}
+
+header {
+	padding: 0.3em;
+	padding-left: 1em;
+	color: white;
+	background-color:#5AA2DE;
+	font-family:Arial,Helvetica,"Sans serif"; 
+	font-size:1em;
+	border-radius: 10px;
+}
+
+#cadre_prof {
+	text-align:left;
+	font-size: 1em;
+	}
+
+section {
+	margin-left:3em;
+	margin-right:2em;	
+}
+
+aside {
+	margin-left:1em;
+		
+}
+
+footer {
+	margin-top:1em;
+	border-top: solid #CCCCCC 2px;
+	color:#999999;
+	font-size:0.8em;
+	text-align:center;	
+}
+
+h1, h2 {
+	font-family:Arial,Helvetica,"Sans serif";
+}
+
+h1 {
+	font-size:1.2em;	
+}
+
+h2 {
+	color:#5AA2DE;
+	font-size:1em;	
+}
+
+#titre_principal {
+	padding-top: 0.5em;
+	color: white;
+	text-align:center;	
+}
+
+#correction, #solution {
+	font-size:1.6em;
+	padding-top:1.5em;
+	padding-bottom:1.5em;
+	padding-right:1.5em;
+	padding-left:0.5em;
+	border-top:dotted thick #66CCFF;	
+}
+
+#dictee {
+	font-family: 'Pacifico', cursive;
+	font-size:1.3em;	
+}
+
+del {
+	color:red;	
+}
+
+ins {
+	color:green;	
+}
+
+#auteur {
+	font-variant:small-caps;	
+}
+
+#ouvrage {
+	font-style:italic;	
+}
+
+#ecrire {
+		background-color:#CCCCCC;
+}
+
+
+textarea, fieldset {
+	border-radius: 10px;
+}
+
+fieldset {
+	padding:0.2em;
+		
+}
+
+#section_1, #section_1_bis {
+	clear:both;	
+}
+
+#section_2, #section_3 {
+	margin-left:3em;
+}
+
+#section_4 {
+	text-align:center;	
+}
+
+.audio {
+	padding:1.5em;
+	background-color:#CCCCCC;
+	border-radius: 10px;
+	box-shadow:
+	0px 2px 2px 0px rgba(0, 0, 0, 0.5),
+	0px 2px 2px 0px rgba(255, 255, 255, 0.5);
+}
+
+.erreur {
+	padding:0.5em;
+	background-color:#FFC0CB;
+	color:red;
+	border-radius: 10px;
+}
+
+
