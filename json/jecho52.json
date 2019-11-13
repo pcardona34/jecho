@@ -1,0 +1,10 @@
+{
+	"app_name":"jecho",
+	"prof": "Patrick Cardona",
+	"titre": "Accords dans la dictée 52",
+	"texte": "Un soir, il arriva à l'église dans une agitation extraordinaire : rouge, essoufflé, le capuchon de travers, et si troublé qu'en prenant de l'eau bénite, il y trempa ses manches jusqu'au coude.",
+	"correction":"Un soir, elle arriva à l'église dans une agitation extraordinaire : rouge, essoufflée, le capuchon de travers, et si troublée qu'en prenant de l'eau bénite, elle y trempa ses manches jusqu'au coude.",
+	"ouvrage":"Lettres de mon moulin",
+	"auteur":"Alphonse Daudet",
+	"consigne":"Transformez ce texte en y remplaçant le pronom « il » par le pronom « elle ». Vous ferez toutes les modifications nécessaires."
+}

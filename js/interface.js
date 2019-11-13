@@ -83,7 +83,7 @@ fetch(donnees)
 			
 			// On actualise les étiquettes à afficher dans l'interface du modèle
 			nouvel.querySelector("#titre_principal").innerHTML = dictee.titre;
-			nouvel.querySelector("#prof").innerHTML = 'Réécriture proposée par : ' + dictee.prof;
+			nouvel.querySelector("#prof").innerHTML = 'Réécriture proposée par ' + dictee.prof;
 			nouvel.querySelector("#ouvrage").innerHTML = dictee.ouvrage;
 			nouvel.querySelector("#auteur").innerHTML = dictee.auteur;
 			nouvel.querySelector("#consigne").innerHTML = dictee.consigne;

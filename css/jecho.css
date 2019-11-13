@@ -105,11 +105,11 @@ h2 {
 }
 
 del {
-	color:red;	
+	color: #d9534f; /* rouge de Bootstrap */	
 }
 
 ins {
-	color:green;	
+	color: #5CB85C; /* vert de Bootstrap */	
 }
 
 #auteur {
@@ -160,6 +160,22 @@ fieldset {
 	background-color:#FFC0CB;
 	color:red;
 	border-radius: 10px;
+}
+
+.bilan {
+	border-top:dotted thick #66CCFF;
+	padding-top: 1.5em;
+	text-align: center;
+	font-size: smaller;
+	color : orange;
+}
+
+.bravo {
+	border-top:dotted thick #66CCFF;
+	padding-top: 1.5em;
+	text-align: center;
+	font-size: smaller;
+	color : #5CB85C; /* vert de Bootstrap */
 }
 
 

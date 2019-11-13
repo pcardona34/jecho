@@ -2,6 +2,7 @@
  * Javascript Diff Algorithm
  *  By John Resig (http://ejohn.org/)
  *  Modified by Chu Alan "sprite"
+ *  Modification : Patrick cardona, 2019
  *
  * Released under the MIT license.
  *
@@ -20,6 +21,7 @@ function escape(s) {
 }
 
 function diffString( o, n ) {
+  let nbre = 0; // nombre de chaînes erronées
   o = o.replace(/\s+$/, '');
   n = n.replace(/\s+$/, '');
 
@@ -42,11 +44,13 @@ function diffString( o, n ) {
   if (out.n.length == 0) {
       for (var i = 0; i < out.o.length; i++) {
         str += '<del>' + escape(out.o[i]) + oSpace[i] + "</del>";
+        nbre++;
       }
   } else {
     if (out.n[0].text == null) {
       for (n = 0; n < out.o.length && out.o[n].text == null; n++) {
         str += '<del>' + escape(out.o[n]) + oSpace[n] + "</del>";
+        nbre++;
       }
     }
 
@@ -58,11 +62,19 @@ function diffString( o, n ) {
 
         for (n = out.n[i].row + 1; n < out.o.length && out.o[n].text == null; n++ ) {
           pre += '<del>' + escape(out.o[n]) + oSpace[n] + "</del>";
+          nbre++;
         }
         str += " " + out.n[i].text + nSpace[i] + pre;
       }
     }
   }
+  let bilan = "";
+  if ( nbre > 0 ){
+    bilan = "<p class='bilan'>Bilan : " + nbre + " erreur(s)</p>";
+  }else{
+    bilan = "<p class='bravo'>Parfait ! Aucune erreur.</p>";
+  }
+  str+= bilan;
   
   return str;
 }

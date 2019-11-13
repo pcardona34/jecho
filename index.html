@@ -15,6 +15,7 @@
 		<title>Index des exercices de réécriture</title>
 		
 		<!-- CSS -->
+		<link href="css/chargement.css" rel="stylesheet" type="text/css" />
 		<link href="css/degrade.css" rel="stylesheet" type="text/css" />
 		<link href="css/index.css" rel="stylesheet" type="text/css" />
 
@@ -22,6 +23,9 @@
 	
 	<body>
 	
+	<div id="conteneur"><p class="chargement">Veuillez patienter...</p></div>
+	
+	<template id="modele">
 	<!-- Corps de l'appli -->	
 	<header>
 		<div>
@@ -35,7 +39,7 @@
     	<div id="zone_5e" class="degrade">
 		
 			<ul>
-				<li><a href="jecho.html?numero=31">Exemple</a></li>
+				<li><a href="jecho.html?numero=52">Accords dans la dictée 52 : un comportement étrange</a></li>
 			</ul>
 		
  		</div>
@@ -44,7 +48,7 @@
     	<div id="zone_3e" class="degrade">
 		
 			<ul>
-				<li><a href="jecho.html?numero=31">Exemple</a></li>
+				<li><a href="jecho.html?numero=32">Accords dans la dictée 32 : le tourisme</a></li>
 			</ul>
 		
  		</div>
@@ -58,6 +62,10 @@
 			Réécritures proposées par Patrick Cardona
 		
 	</footer>
+	
+	</template>
+	
     <script src="js/accordeons.js"></script>
+    <script src="js/index.js"></script>
      </body>
 </html>
