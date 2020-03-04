@@ -35,7 +35,7 @@ Copyright (C) 2019 Patrick CARDONA
 
 body {
 	background-color: white;
-	font-size:12pt;
+	font-size:16pt;
 }
 
 
@@ -47,7 +47,7 @@ header {
 	color: white;
 	background-color:#5AA2DE;
 	font-family:Arial,Helvetica,"Sans serif"; 
-	font-size:1em;
+	font-size:0.8em;
 	border-radius: 10px 10px 0px 0px;
 }
 
@@ -56,7 +56,7 @@ header {
 	margin-right: 2em;
 	padding-left: 0px;
 	padding-right: 0px;
-	border: silver thin solid;
+	border: darkgray thin solid;
 	
 }
 
@@ -76,6 +76,8 @@ h3{
 	color: gray;
 	padding: 1em;
 	margin: 0px;
+	border: darkgray solid thin;
+	border-top: none;
 }
 
 h3:hover {
@@ -84,18 +86,29 @@ h3:hover {
 }
 
 ul {
-	margin-top: 0px;
-	margin-bottom: 0px;
+	margin: 0;
+	list-style: none;
 	}
+	
+li {
+	font-family:Arial, Verdana, Helvetica, sans-serif;
+	font-size: 0.9em;
+	padding-top: 0.6em;
+}
 
 footer {
 	margin-top:1em;
 	/*border-top: solid #CCCCCC 2px;*/
 	color:#999999;
 	font-size:0.8em;
-	text-align:center;	
+	text-align:center;
 }
 
 a, a:visited {
+	color: green;
 	text-decoration: none;
+}
+
+a:hover {
+	color: orange;
 }
