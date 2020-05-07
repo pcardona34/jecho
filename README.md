@@ -1,3 +1,5 @@
+Cette application est obsolète : veuillez considérer désormais sa version améliorée : [ejDicto](https://github.com/pcardona34/ejdicto)
+
 # jecho
 Nouvelle version de l'exercice de réécriture
 
